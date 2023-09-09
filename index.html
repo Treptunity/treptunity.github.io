@@ -6,17 +6,23 @@
         <link rel="stylesheet" href="./styles.css" />
         <title>Treptunity</title>
         <script id="mcjs">
-            !(function (c, h, i, m, p) {
-                (m = c.createElement(h)),
-                    (p = c.getElementsByTagName(h)[0]),
-                    (m.async = 1),
-                    (m.src = i),
-                    p.parentNode.insertBefore(m, p);
-            })(
-                document,
-                'script',
-                'https://chimpstatic.com/mcjs-connected/js/users/5af496a977a7571b0c40eb1cc/2ee71732fe9ee5ced8c7fe3e6.js'
-            );
+            function showPopup() {
+                !(function (c, h, i, m, p) {
+                    (m = c.createElement(h)),
+                        (p = c.getElementsByTagName(h)[0]),
+                        (m.async = 1),
+                        (m.src = i),
+                        p.parentNode.insertBefore(m, p);
+                })(
+                    document,
+                    'script',
+                    'https://chimpstatic.com/mcjs-connected/js/users/5af496a977a7571b0c40eb1cc/2ee71732fe9ee5ced8c7fe3e6.js'
+                );
+                document.cookie =
+                    'MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                document.cookie =
+                    'MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            }
         </script>
     </head>
     <body>
@@ -32,6 +38,7 @@
                 class="h-button"
                 data-text="SIGN UP FOR BETA"
                 href="#"
+                onclick="showPopup()"
             >
                 <span>L</span>
                 <span>A</span>
@@ -51,7 +58,6 @@
                 <span>2</span>
                 <span>4</span>
             </a>
-            <!-- <button id="btn" class="glow-on-hover">SIGN UP FOR BETA</button> -->
         </div>
     </body>
 </html>
